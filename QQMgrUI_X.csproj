@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA6746C3-DB62-4166-8126-78D4DFA07C6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QQMgrUI_X</RootNamespace>
+    <AssemblyName>QQMgrUI_X</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI.Designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QQMgrUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QQMgrUI.Designer.cs">
+      <DependentUpon>QQMgrUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSAUtil.cs" />
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QQMgrUI.resx">
+      <DependentUpon>QQMgrUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\loginheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\scan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\scanH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\titel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\214.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title1h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title2h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title3h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title4h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title5h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\title6h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\314.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\316.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\412.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\413.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\111h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\112h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\121h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\122h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\123h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\124h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\211h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\212h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\213h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\214h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\311h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\312h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\313h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\314h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\315h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\316h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\322h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\323h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\324h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\325h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\411h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\412h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\413h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\421h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\422h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\423h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\Login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
